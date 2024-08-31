@@ -41,9 +41,9 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`lg:flex gap-4 absolute duration-1000
+        className={`lg:flex gap-4 absolute 
             bg-yellow-200  mt-3 p-6
-        ${open ? "top-16" : "-top-60"}`}
+        ${open ? "" : "hidden"}`}
       >
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
